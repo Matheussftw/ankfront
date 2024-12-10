@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.relatorios-conteudo {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    margin-top: 10%;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 20px;
+    width: calc(100% - 220px);
+    margin-left: 220px;
+}
+
+contabody {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.grid-container {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.grid-item {
+
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #fff;
+}
+
+.turmaImgIcone {
+    max-width: 100px;
+}
+
+.turmas {
+    background-color: #2980b5;
+}
+
+.central-ajuda {
+    background-color: #E54C3C;
+}
+
+.calendario-eventos {
+    background-color: #2980b5;
+}
+
+.perfil {
+    background-color: #2980b5;
+}
+
+.hub-conhecimento {
+    background-color: #E54C3C;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.orientador {
+    background-color: #2980b5;
+}
+
+.meus-projetos {
+    background-color: #E54C3C;
+}
+
+/* Responsivo */
+@media (max-width: 1200px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-right {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+
+    .header-right .profile,
+    .header-right .notifications {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
